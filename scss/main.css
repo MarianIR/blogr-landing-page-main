@@ -336,7 +336,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("/blogr-landing-page-main/images/illustration-editor-mobile.svg");
+  background-image: url("/images/illustration-editor-mobile.svg");
 }
 @media (min-width: 1024px) {
   .design-the-future .design-container .main-image {
@@ -344,7 +344,7 @@ body {
     margin: 0;
     max-width: 70rem;
     height: 60rem;
-    background-image: url("/blogr-landing-page-main/images/illustration-editor-desktop.svg");
+    background-image: url("/images/illustration-editor-desktop.svg");
   }
 }
 
@@ -355,7 +355,7 @@ body {
   padding: 0rem 1rem 10rem;
   background-color: hsl(237, 23%, 32%);
   border-radius: 0 5rem 0 5rem;
-  background-image: url("/blogr-landing-page-main/images/bg-pattern-circles.svg");
+  background-image: url("/images/bg-pattern-circles.svg");
   background-repeat: no-repeat;
   background-size: -50%;
 }
@@ -420,11 +420,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("/blogr-landing-page-main/images/illustration-laptop-mobile.svg");
+  background-image: url("/images/illustration-laptop-mobile.svg");
 }
 @media (min-width: 1024px) {
   .open-simple .main-image {
-    background-image: url("/blogr-landing-page-main/images/illustration-laptop-desktop.svg");
+    background-image: url("/images/illustration-laptop-desktop.svg");
     width: 60%;
     margin: 0;
     max-width: 70rem;
