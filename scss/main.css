@@ -20,7 +20,7 @@ body {
 
 .hero {
   width: 100%;
-  background-image: url("/images/bg-pattern-intro-mobile.svg");
+  background-image: url("../images/bg-pattern-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -34,7 +34,7 @@ body {
   justify-content: space-between;
   padding: 3rem 1rem;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header {
     align-items: flex-start;
     padding: 1rem 5rem;
@@ -45,7 +45,7 @@ body {
   width: 8rem;
   height: 2.5rem;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .logo {
     margin: 3rem 0 0 2rem;
   }
@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation {
     width: 90%;
     display: flex;
@@ -79,7 +79,7 @@ body {
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
   display: none;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container {
     position: relative;
     display: flex;
@@ -99,7 +99,7 @@ body {
   width: 100%;
   border-bottom: 0.1rem solid rgb(236, 236, 236);
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .links {
     display: flex;
     flex-direction: row;
@@ -128,7 +128,7 @@ body {
   font-weight: bold;
   color: hsl(240, 10%, 16%);
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .links .links-element .links-title {
     font-size: 2rem;
     color: hsl(0, 0%, 100%);
@@ -144,11 +144,15 @@ body {
   width: 0.8rem;
   height: 0.6rem;
   border-bottom: none;
+  transition: transform 0.3s ease;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .links .links-element .links-title .arrow {
     filter: brightness(0) invert(1);
   }
+}
+.hero .main-header .navigation .navigation-container .links .links-element .links-title .arrow.active {
+  transform: rotate(180deg);
 }
 .hero .main-header .navigation .navigation-container .links .links-element .links-list {
   display: flex;
@@ -160,13 +164,15 @@ body {
   width: 90%;
   display: none;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .links .links-element .links-list {
     margin-top: 1.5rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.5rem;
     padding: 1rem;
     display: none;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
   }
 }
 .hero .main-header .navigation .navigation-container .links .links-element .links-list .link {
@@ -182,10 +188,14 @@ body {
   color: hsl(208, 49%, 24%);
   font-weight: bold;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .links .links-element .links-list .link {
     padding: 0.5rem 1rem;
   }
+}
+.hero .main-header .navigation .navigation-container .links .links-element .links-list.show {
+  display: flex;
+  max-height: 20rem; /* Adjust this value to your desired maximum height */
 }
 .hero .main-header .navigation .navigation-container .connect-btns {
   display: flex;
@@ -193,7 +203,7 @@ body {
   align-items: center;
   margin-top: 2rem;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .connect-btns {
     display: block;
     margin-top: 0;
@@ -209,7 +219,7 @@ body {
 .hero .main-header .navigation .navigation-container .connect-btns .login:hover {
   cursor: pointer;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .connect-btns .login {
     color: hsl(0, 0%, 100%);
   }
@@ -227,7 +237,7 @@ body {
   padding: 1.5rem 3rem;
   color: hsl(0, 0%, 100%);
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .navigation-container .connect-btns .sign-up {
     margin-left: 5rem;
     background: hsl(0, 0%, 100%);
@@ -238,14 +248,14 @@ body {
   cursor: pointer;
   opacity: 0.8;
 }
-@media (min-width: 886px) {
+@media (min-width: 901px) {
   .hero .main-header .navigation .menu-btns {
     display: none;
   }
 }
 .hero .main-header .navigation .menu-btns .open-btn {
   width: 2.5rem;
-  height: 1.5rem;
+  height: 2rem;
 }
 .hero .main-header .navigation .menu-btns .close-btn {
   display: none;
@@ -336,7 +346,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("/images/illustration-editor-mobile.svg");
+  background-image: url("../images/illustration-editor-mobile.svg");
 }
 @media (min-width: 1024px) {
   .design-the-future .design-container .main-image {
@@ -344,7 +354,7 @@ body {
     margin: 0;
     max-width: 70rem;
     height: 60rem;
-    background-image: url("/images/illustration-editor-desktop.svg");
+    background-image: url("../images/illustration-editor-desktop.svg");
   }
 }
 
@@ -355,7 +365,7 @@ body {
   padding: 0rem 1rem 10rem;
   background-color: hsl(237, 23%, 32%);
   border-radius: 0 5rem 0 5rem;
-  background-image: url("/images/bg-pattern-circles.svg");
+  background-image: url("../images/bg-pattern-circles.svg");
   background-repeat: no-repeat;
   background-size: -50%;
 }
@@ -420,11 +430,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("/images/illustration-laptop-mobile.svg");
+  background-image: url("../images/illustration-laptop-mobile.svg");
 }
 @media (min-width: 1024px) {
   .open-simple .main-image {
-    background-image: url("/images/illustration-laptop-desktop.svg");
+    background-image: url("../images/illustration-laptop-desktop.svg");
     width: 60%;
     margin: 0;
     max-width: 70rem;
